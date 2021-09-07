@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, BrowserRouter } from "react-router-dom";
+import logo from "../../images/logo.svg"
 
 const Header = () => {
     return (
         <BrowserRouter>
             <header className="header">
             <div className="header__logo">
-                <Link to="/"><img src='./images/logo.png' alt="ЛИГА Банк"></img></Link>
+                    <Link to="/"><img src={logo} alt="ЛИГА Банк" />ЛИГА БАНК</Link>
             </div>
             <ul className="header__menu">
                 <li><Link className="header__link" to="/">Услуги</Link></li>

@@ -17,7 +17,7 @@ const Main = (props) => {
         if (!props.data.isRatesLoaded) {
             props.loadRates(props.userData.date);
         }
-    }, [props.data.isRatesLoaded]);
+    }, [props, props.data.isRatesLoaded]);
 
     if (!props.data.isRatesLoaded) {
         return (

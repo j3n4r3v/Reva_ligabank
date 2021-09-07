@@ -1,12 +1,13 @@
 import React from "react";
-import {Link, BrowserRouter} from "react-router-dom";
+import { Link, BrowserRouter } from "react-router-dom";
+import logo from "../../images/logo.svg"
 
 const Footer = () => {
     return (
         <BrowserRouter>
         <footer className="footer">
             <div className="footer__logo">
-                <Link to="/"><img src='./images/logo.png' alt="ЛИГА Банк"></img></Link>
+                <Link to="/"><img src={logo} alt="ЛИГА Банк"/>ЛИГА БАНК</Link>
                 <p className="footer__text">150015, г. Москва, ул. Московская, д. 32 Генеральная лицензия Банка России №1050 Ⓒ Лига Банк, 2019</p>
             </div>
             <ul className="footer__menu">
