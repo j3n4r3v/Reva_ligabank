@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { MAXIMUM_DAY_RANGE, MAXIMUM_HISTORY_ITEMS, MAXIMUM_SYMBOLS_AFTER_COMMA, ColumnsQuantity, Currency } from '../../utils/const';
+import { MAX_DAY_RANGE, MAX_HISTORY_ITEMS, MAX_SYMBOLS_AFTER_COMMA, ColumnsQuantity, Currency } from '../../utils/const';
 import dayjs from "dayjs";
 import Flatpickr from "react-flatpickr";
-import HistoryList from '../history-list/history-list';
+import History from '../../components/history/history';
 import Intro from '../intro/intro';
 import "flatpickr/dist/themes/material_blue.css";
 import { connect } from 'react-redux';
@@ -45,7 +45,7 @@ const Main = (props) => {
             setEmptyFields();
         } else {
             props.handleUserHas(has.current.value);
-            props.handleUserWant((currentHasInRubles / currentWantInRubles).toFixed(MAXIMUM_SYMBOLS_AFTER_COMMA));
+            props.handleUserWant((currentHasInRubles / currentWantInRubles).toFixed(MAX_SYMBOLS_AFTER_COMMA));
         }
     };
 
@@ -55,7 +55,7 @@ const Main = (props) => {
         if (!want.current.value) {
             setEmptyFields();
         } else {
-            props.handleUserHas((currentHasInRubles / currentWantInRubles).toFixed(MAXIMUM_SYMBOLS_AFTER_COMMA));
+            props.handleUserHas((currentHasInRubles / currentWantInRubles).toFixed(MAX_SYMBOLS_AFTER_COMMA));
             props.handleUserWant(want.current.value);
         }
     };
@@ -107,8 +107,6 @@ const Main = (props) => {
                                 <option value="RUB">RUB</option>
                                 <option value="USD">USD</option>
                                 <option value="EUR">EUR</option>
-                                <option value="GBP">GBP</option>
-                                <option value="CNY">CNY</option>
                             </select>
                         </div>
                         <div className="main__converter-input">
@@ -118,8 +116,6 @@ const Main = (props) => {
                                 <option value="USD">USD</option>
                                 <option value="EUR">EUR</option>
                                 <option value="GBP">GBP</option>
-                                <option value="CNY">CNY</option>
-                                <option value="RUB">RUB</option>
                             </select>
                         </div>
                         <button onClick={swapValues} className="main__converter-swap-button" type="button"></button>
@@ -133,7 +129,7 @@ const Main = (props) => {
                             onChange={(date) => props.loadRates(date)}
                             options={{
                                 dateFormat: `d.m.Y`,
-                                minDate: dayjs().subtract(MAXIMUM_DAY_RANGE, `day`).toDate(),
+                                minDate: dayjs().subtract(MAX_DAY_RANGE, `day`).toDate(),
                                 maxDate: dayjs().toDate(),
                             }}
                         />
@@ -143,8 +139,8 @@ const Main = (props) => {
                     <div className="main__converter-history">
                         <h3 className="main__history-title">История конвертации</h3>
                         <div className="main__history-list-wrapper">
-                            <HistoryList stories={props.stories.slice(ColumnsQuantity.START, ColumnsQuantity.END)} />
-                            {props.stories.length > ColumnsQuantity.END && <HistoryList stories={props.stories.slice(ColumnsQuantity.END, MAXIMUM_HISTORY_ITEMS)} isSecondColumn={true} />}
+                            <History stories={props.stories.slice(ColumnsQuantity.START, ColumnsQuantity.END)} />
+                            {props.stories.length > ColumnsQuantity.END && <History stories={props.stories.slice(ColumnsQuantity.END, MAX_HISTORY_ITEMS)} isSecondColumn={true} />}
                         </div>
                         <button className="main__converter-btn main__converter-btn--reset" type="reset" onClick={clearHistoryHandler}>Очистить историю</button>
                     </div>
