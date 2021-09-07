@@ -53,7 +53,7 @@
   font-size: 30px;
   padding-left: 14px;
   -webkit-appearance: none;
-  background-image: url('./images/select_arrow.svg');
+  background-image: url('../../images/select_arrow.svg');
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 85px;
@@ -105,7 +105,7 @@
   margin-top: 60px;
   padding-right: 48px;
   padding-top: 7px;
-  background-image: url('./images/calendar.svg');
+  background-image: url('../../images/calendar.svg');
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 95%
@@ -161,7 +161,7 @@ input[type="number"]:focus {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('./images/double_arrow.svg');
+  background-image: url('../../images/double_arrow.svg');
   left: 48%;
   top: 55%;
   cursor: pointer;

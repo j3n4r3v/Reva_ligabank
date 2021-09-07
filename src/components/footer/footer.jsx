@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__logo">
-                <a href="#"><img src='./images/logo.png' alt="ЛИГА Банк"></img></a>
+                <Link to="/"><img src='./images/logo.png' alt="ЛИГА Банк"></img></Link>
                 <p className="footer__text">150015, г. Москва, ул. Московская, д. 32 Генеральная лицензия Банка России №1050 Ⓒ Лига Банк, 2019</p>
             </div>
             <ul className="footer__menu">
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Рассчитать кредит</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Задать вопрос</a></li>
+                <li><Link to="/">Услуги</Link></li>
+                <li><Link to="/">Рассчитать кредит</Link></li>
+                <li><Link to="/">Контакты</Link></li>
+                <li><Link to="/">Задать вопрос</Link></li>
             </ul>
             <div className="footer__contacts">
                 <div className="footer__free-mobile">
@@ -24,10 +25,10 @@ const Footer = () => {
                 </div>
             </div>
             <ul className="footer__social">
-                <li><a className="footer__social-link footer__social-link--facebook" href="#"></a></li>
-                <li><a className="footer__social-link footer__social-link--instagram" href="#"></a></li>
-                <li><a className="footer__social-link footer__social-link--twitter" href="#"></a></li>
-                <li><a className="footer__social-link footer__social-link--youtube" href="#"></a></li>
+                <li><Link className="footer__social-link footer__social-link--facebook" to="/"></Link></li>
+                <li><Link className="footer__social-link footer__social-link--instagram" to="/"></Link></li>
+                <li><Link className="footer__social-link footer__social-link--twitter" to="/"></Link></li>
+                <li><Link className="footer__social-link footer__social-link--youtube" to="/"></Link></li>
             </ul>
         </footer>
     );

@@ -5,9 +5,11 @@ import Footer from "../footer/footer";
 
 const App = () => {
   return (
-    <Header />,
-    <Main/>,
-    <Footer/>
+  <>
+    <Header />
+    <Main />
+    <Footer />
+  </>
   );
 }
 

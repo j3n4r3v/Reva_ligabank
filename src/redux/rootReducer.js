@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { storiesReducer } from './storiesReducer';
-import { userDataReducer } from './userdataReducer';
+import { userDataReducer } from './userDataReducer';
 import { dataReducer } from './dataReducer';
 
 export const rootReducer = combineReducers({

@@ -1,20 +1,21 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
         <header className="header">
             <div className="header__logo">
-                <a href="#"><img src='./images/logo.png' alt="ЛИГА Банк"></img></a>
+                <Link to="/"><img src='./images/logo.png' alt="ЛИГА Банк"></img></Link>
             </div>
             <ul className="header__menu">
-                <li><a className="header__link" href="#">Услуги</a></li>
-                <li><a className="header__link" href="#">Рассчитать кредит</a></li>
-                <li><a className="header__link header__link--active" href="#">Конвертер валют</a></li>
-                <li><a className="header__link" href="#">Контакты</a></li>
-                <li><a className="header__link" href="#">Задать вопрос</a></li>
+                <li><Link className="header__link" to="/">Услуги</Link></li>
+                <li><Link className="header__link" to="/">Рассчитать кредит</Link></li>
+                <li><Link className="header__link header__link--active" to="/">Конвертер валют</Link></li>
+                <li><Link className="header__link" to="/">Контакты</Link></li>
+                <li><Link className="header__link" to="/">Задать вопрос</Link></li>
             </ul>
             <div className="header__login">
-                <a className="header__link header__link--login" href="#">Войти в Интернет-банк</a>
+                <Link className="header__link header__link--login" to="/">Войти в Интернет-банк</Link>
             </div>
         </header>
     );
