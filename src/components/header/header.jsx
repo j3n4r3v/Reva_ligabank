@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, BrowserRouter } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className="header">
+        <BrowserRouter>
+            <header className="header">
             <div className="header__logo">
                 <Link to="/"><img src='./images/logo.png' alt="ЛИГА Банк"></img></Link>
             </div>
@@ -17,7 +18,8 @@ const Header = () => {
             <div className="header__login">
                 <Link className="header__link header__link--login" to="/">Войти в Интернет-банк</Link>
             </div>
-        </header>
+            </header>
+        </BrowserRouter>
     );
 };
 

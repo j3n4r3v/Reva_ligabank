@@ -1,8 +1,9 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, BrowserRouter} from "react-router-dom";
 
 const Footer = () => {
     return (
+        <BrowserRouter>
         <footer className="footer">
             <div className="footer__logo">
                 <Link to="/"><img src='./images/logo.png' alt="ЛИГА Банк"></img></Link>
@@ -30,7 +31,8 @@ const Footer = () => {
                 <li><Link className="footer__social-link footer__social-link--twitter" to="/"></Link></li>
                 <li><Link className="footer__social-link footer__social-link--youtube" to="/"></Link></li>
             </ul>
-        </footer>
+            </footer>
+        </BrowserRouter>
     );
 };
 

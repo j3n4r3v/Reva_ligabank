@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react';
-import { MAX_DAY_RANGE, MAX_HISTORY_ITEMS, MAX_SYMBOLS_AFTER_COMMA, ColumnsQuantity, Currency } from '../../utils/const';
+import React, { useEffect, useRef } from "react";
+import { MAX_DAY_RANGE, MAX_HISTORY_ITEMS, MAX_SYMBOLS_AFTER_COMMA, ColumnsQuantity, Currency } from "../../utils/const";
 import dayjs from "dayjs";
 import Flatpickr from "react-flatpickr";
-import History from '../../components/history/history';
-import Intro from '../intro/intro';
+import History from "../../components/history/history";
+import Intro from "../intro/intro";
 import "flatpickr/dist/themes/material_blue.css";
-import { connect } from 'react-redux';
-import { createStories, clearStories, handleUserHas, handleUserWant, handleUserHasCurrency, handleUserWantCurrency, handleDate, writeData, setServerError, loadRates } from '../../redux/action';
-import PropTypes from 'prop-types';
+import { connect } from "react-redux";
+import { createStories, clearStories, handleUserHas, handleUserWant, handleUserHasCurrency, handleUserWantCurrency, handleDate, writeData, setServerError, loadRates } from "../../redux/action";
+import PropTypes from "prop-types";
 
 const Main = (props) => {
     const has = useRef();
