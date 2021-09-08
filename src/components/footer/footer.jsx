@@ -11,7 +11,7 @@ const Footer = () => {
                         <img src={logo} alt="ЛИГА Банк" />
                         <span className="footer__logo-name" >ЛИГА БАНК</span>
                     </Link>
-                    <p className="footer__text">150015, г. Москва, ул. Московская, д. 32 Генеральная лицензия Банка России №1050 Ⓒ Лига Банк, 2019</p>
+                    <p className="footer__text">150015, г. Москва, ул. Московская, д. 32 <br/> Генеральная лицензия Банка России №1050 <br/> Ⓒ Лига Банк, 2019</p>
                 </div>
             <ul className="footer__menu">
                 <li><Link to="/">Услуги</Link></li>

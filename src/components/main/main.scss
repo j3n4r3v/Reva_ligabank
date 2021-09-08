@@ -50,7 +50,7 @@
   border: 1px solid #1F1E25;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-left: 16px;
+  margin-left: 13px;
   font-size: 30px;
   padding-left: 14px;
   -webkit-appearance: none;
@@ -69,11 +69,11 @@
 }
 
 .main__converter-btn--save {
-  width: 382px;
+  width: 384px;
   height: 60px;
   font-weight: 500;
-  font-size: 18px;
-  margin-top: 61px;
+  font-size: 19px;
+  margin-top: 62px;
 }
 
 .main__converter-btn--reset {
@@ -81,7 +81,8 @@
   height: 51px;
   font-weight: 500;
   font-size: 16px;
-  margin-top: 4px;
+  margin-top: 3px;
+  margin-left: -3px;
 }
 
 .main__converter-amounts {
@@ -104,8 +105,8 @@
 
 .main__converter-results input {
   margin-top: 60px;
-  padding-right: 48px;
-  padding-top: 7px;
+  padding-right: 66px;
+  padding-top: 9px;
   background-image: url('../../images/calendar.svg');
   background-repeat: no-repeat;
   background-position: right;
@@ -115,7 +116,7 @@
 .main__converter-history {
   background-color: #F6F7FF;
   min-height: 477px;
-  padding: 44px 70px 39px 70px;
+  padding: 46px 70px 39px 70px;
   margin-top: 100px;
   position: relative;
   box-sizing: border-box;
