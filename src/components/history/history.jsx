@@ -1,5 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import double_arrow from "../../images/double_arrow.svg"
 
 const History = (props) => {
     const { stories, isSecondColumn } = props;
@@ -9,7 +10,7 @@ const History = (props) => {
                 <li key={i} className="main__history-item">
                     <p>{story.date}</p>
                     <p className="main__history-had">{story.has + ` ` + story.hasCurrency}</p>
-                    <img className="main__history-arrow" src="./images/single_arrow.svg" width="40" height="16" alt="Сконвертировано"></img>
+                    <img className="main__history-arrow" src={double_arrow} width="40" height="16" alt="Сконвертировано"></img>
                     <p className="main__history-got">{story.want + ` ` + story.wantCurrency}</p>
                 </li>
             );

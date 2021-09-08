@@ -10,6 +10,17 @@
   padding-top: 26px;
 }
 
+.header__logo-bank {
+  font-family: "Work Sans";
+  font-size: 20px;
+  margin-left: 9px;
+  text-decoration: none;
+}
+
+.header__logo-name {
+margin-left: 9px;
+}
+
 .header__menu {
   width: 815px;
   list-style: none;
@@ -23,7 +34,8 @@
   box-sizing: border-box;
 }
 
-.header__link {
+.header__link,
+.header__logo-bank {
   color: #1F1E25;
 }
 

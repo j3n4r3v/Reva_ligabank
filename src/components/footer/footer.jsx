@@ -6,10 +6,12 @@ const Footer = () => {
     return (
         <BrowserRouter>
         <footer className="footer">
-            <div className="footer__logo">
-                <Link to="/"><img src={logo} alt="ЛИГА Банк"/>ЛИГА БАНК</Link>
-                <p className="footer__text">150015, г. Москва, ул. Московская, д. 32 Генеральная лицензия Банка России №1050 Ⓒ Лига Банк, 2019</p>
-            </div>
+                <div className="footer__logo">
+                    <Link to="/" className="footer__logo-bank">
+                        <img src={logo} alt="ЛИГА Банк" />
+                        <span className="footer__logo-name" >ЛИГА БАНК</span>
+                    </Link>
+                </div>
             <ul className="footer__menu">
                 <li><Link to="/">Услуги</Link></li>
                 <li><Link to="/">Рассчитать кредит</Link></li>

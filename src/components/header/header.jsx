@@ -7,7 +7,10 @@ const Header = () => {
         <BrowserRouter>
             <header className="header">
             <div className="header__logo">
-                    <Link to="/"><img src={logo} alt="ЛИГА Банк" />ЛИГА БАНК</Link>
+                    <Link to="/" className="header__logo-bank">
+                        <img src={logo} alt="ЛИГА Банк" />
+                        <span className="header__logo-name" >ЛИГА БАНК</span>
+                    </Link>
             </div>
             <ul className="header__menu">
                 <li><Link className="header__link" to="/">Услуги</Link></li>
