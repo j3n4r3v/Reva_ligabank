@@ -1,6 +1,6 @@
 .header {
   min-height: 91px;
-  padding: 0 98px;
+  padding: 0 101px 0 86px;
   display: flex;
   background-color: #F6F7FF;
 }
@@ -18,7 +18,7 @@
 }
 
 .header__logo-name {
-margin-left: 9px;
+margin-left: 11px;
 }
 
 .header__menu {
@@ -30,7 +30,7 @@ margin-left: 9px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 45px;
+  padding-left: 53px;
   box-sizing: border-box;
 }
 
