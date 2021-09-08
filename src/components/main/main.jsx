@@ -107,6 +107,8 @@ const Main = (props) => {
                                 <option value="RUB">RUB</option>
                                 <option value="USD">USD</option>
                                 <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="CNY">CNY</option>
                             </select>
                         </div>
                         <div className="main__converter-input">
@@ -116,6 +118,8 @@ const Main = (props) => {
                                 <option value="USD">USD</option>
                                 <option value="EUR">EUR</option>
                                 <option value="GBP">GBP</option>
+                                <option value="RUB">RUB</option>
+                                <option value="CNY">CNY</option>
                             </select>
                         </div>
                         <button onClick={swapValues} className="main__converter-swap-button" type="button"></button>
